@@ -119,3 +119,4 @@ output.even-row = ""
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
 test = mysql://root:nHH29kEA7@120.76.46.55:3306/crm3test?useUnicode=true&characterEncoding=utf8&useSSL=false
+dev = mysql://root:nHH29kEA7@120.76.46.55:3306/crm3?useUnicode=true&characterEncoding=utf8&useSSL=false
