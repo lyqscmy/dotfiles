@@ -25,10 +25,14 @@ Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'zchee/deoplete-jedi'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
-" == python3
-let g:python3_host_prog = '/root/venv/nvim/bin/python'
+" == go
+let g:go_fmt_command = "goimports"
+
+" == deoplete
 let g:deoplete#enable_at_startup = 1
 
 " == EasyMotion

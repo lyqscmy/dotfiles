@@ -118,4 +118,4 @@ output.even-row = ""
 # Special characters in passwords and other strings can be escaped with URL encoding.
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
-test = mysql://root:8098@localhost/test
+test = mysql://root:nHH29kEA7@120.76.46.55:3306/crm3test?useUnicode=true&characterEncoding=utf8&useSSL=false
