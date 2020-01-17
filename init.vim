@@ -21,12 +21,11 @@ cmap w!! w !sudo tee > /dev/null %
 " == plug manager
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Shougo/deoplete.nvim'
-Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
+Plug 'zchee/deoplete-jedi'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
-Plug 'zchee/deoplete-jedi'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " == go

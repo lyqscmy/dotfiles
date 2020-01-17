@@ -5,8 +5,10 @@
 	helper = cache --timeout=3600
 [push]
 	default = simple
-; [icdiff]
-; 	options = --highlight --line-numbers
+[diff]
+	tool = icdiff
+[icdiff]
+	options = --highlight --line-numbers
 [pull]
 	rebase = true
 [core]
