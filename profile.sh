@@ -11,15 +11,21 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..="cd .."
-# alias vi="nvim"
+alias vi="nvim"
 # alias e='emacsclient -t'
 alias grep="grep --color=always"
 
 alias mongo-test="mongo mongodb://admin:leanwork2019@192.168.60.237:32010"
-alias mongo-dev="mongo mongodb://admin:leanwork2019@192.168.60.237:32009"
+alias mongo-dev="mongo mongodb://admin:leanwork2019@192.168.60.237:31661"
+alias mongo-qa="mongo mongodb://admin:leanwork2019@192.168.60.127:31771"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+	--cache=$HOME/.npm/.cache/cnpm \
+	--disturl=https://npm.taobao.org/dist \
+	--userconfig=$HOME/.cnpmrc"
 
 PS1='\n\e[1;37m[\e[m\e[1;32m\u\e[m\e[1;33m@\e[m\e[1;35m\H\e[m:\e[4m$(pwd)\e[m\e[1;37m]\e[m\e[1;36m\e[m\n\$ '
 
+PATH=$HOME/.local/bin:$PATH
 PATH=/usr/local/go/bin:$PATH
 PATH=/usr/local/protoc/bin:$PATH
 PATH=$HOME/.local/bin:$PATH
