@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# bash
-ln -sf `pwd`/bashrc.sh $HOME/.bashrc
-ln -sf `pwd`/profile.sh $HOME/.profile
-ln -sf `pwd`/z.sh $HOME/.z.sh
+# zsh
+ln -sf `pwd`/zshrc.zsh $HOME/.zshrc
 
 # neovim
 [ -d ~/.local/share/nvim/site/autoload/ ] || mkdir -p ~/.local/share/nvim/site/autoload/
@@ -16,7 +14,4 @@ ln -sf `pwd`/init.vim ~/.config/nvim/
 ln -sf `pwd`/pip.conf ~/.config/pip/
 
 # git
-ln -sf `pwd`/.gitconfig $HOME/.gitconfig
-
-# mycli
-ln -sf `pwd`/myclirc $HOME/.myclirc
+ln -sf `pwd`/gitconfig.global $HOME/.gitconfig
