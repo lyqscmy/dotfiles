@@ -4,6 +4,7 @@
 # WSL (aka Bash for Windows) doesn't work well with BG_NICE
 [ -d "/mnt/c" ] && [[ "$(uname -a)" == *Microsoft* ]] && unsetopt BG_NICE
 
+
 # alias
 alias vi="nvim"
 
@@ -69,5 +70,11 @@ antigen bundle willghatch/zsh-cdr
 
 antigen apply
 
+# Disable correction
+unsetopt correct_all
+unsetopt correct
+DISABLE_CORRECTION="true" 
+
 # PATH
+PATH="$HOEM/.local/bin:$PATH"
 PATH="/usr/local/go/bin:$PATH"
