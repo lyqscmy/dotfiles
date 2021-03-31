@@ -1,5 +1,5 @@
 [user]
-	name = li Yongqiang
+	name = Li Yongqiang
 	email = lyqscmy@icloud.com
 [credential]
 	helper = cache --timeout=3600
@@ -9,7 +9,5 @@
 	tool = icdiff
 [icdiff]
 	options = --highlight --line-numbers
-[pull]
-	rebase = true
 [core]
 	editor = nvim
